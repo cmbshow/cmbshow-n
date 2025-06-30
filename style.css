@@ -332,6 +332,48 @@ img {
   pointer-events: none; /* Prevent interaction if used as a background */
 }
 
+.stream-icons {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stream-icon {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.2s ease;
+}
+
+.stream-icon:hover {
+  transform: scale(1.1);
+}
+
+.latest-album-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.album-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.album-artwork img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .album-title {
+    font-size: 1.8rem;
+  }
+}
+
+
 /* Optional: If you want to overlay content like headings or buttons */
 .video-overlay {
   position: absolute;
